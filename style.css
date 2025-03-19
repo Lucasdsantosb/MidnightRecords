@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to bottom, #ff0101, #000000);
+}
+
+h1 {
+    color: black;
+    text-align: center;
+}
+h2 {
+    margin-top: 15px;
+}
+hr {
+    border: none;
+    height: 2px;
+    background-color: rgb(0, 0, 0); /* Linha branca */
+    margin: 10px auto; /* Centraliza a linha */
+    width: 100%; /* Ajuste o tamanho da linha */
+}
+a {
+    text-align: center;
+    text-decoration: none; /* Remove o sublinhado */
+    color: rgb(0, 0, 0); /* Define a cor do texto */
+    font-size: 18px; /* Ajusta o tamanho da fonte */
+    font-weight: bold; /* Deixa o texto em negrito */
+    padding: 10px 20px; /* Adiciona espaçamento interno */
+    margin: px; /* Adiciona espaçamento externo entre os links */
+    border: 2px solid rgb(0, 0, 0); /* Adiciona uma borda branca */
+    border-radius: 5px; /* Arredonda os cantos */
+    background-color: transparent; /* Fundo transparente */
+    transition: all 0.3s ease; /* Adiciona uma transição suave */
+}
+
+a:hover {
+    background-color: rgb(0, 0, 0); /* Fundo branco ao passar o mouse */
+    color: #ff0101; /* Texto vermelho ao passar o mouse */
+}
+.menu {
+    display: flex; /* Ativa o Flexbox */
+    justify-content: center; /* Centraliza os links horizontalmente */
+    flex-wrap: wrap; /* Permite que os links quebrem para a próxima linha, se necessário */
+    gap: 10px; /* Adiciona espaçamento entre os links */
+    margin-top: 20px; /* Espaçamento acima do menu */
+}
+
+a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: rgb(0, 0, 0); /* Define a cor do texto */
+    font-size: 18px; /* Ajusta o tamanho da fonte */
+    font-weight: bold; /* Deixa o texto em negrito */
+    padding: 10px 20px; /* Adiciona espaçamento interno */
+    border: 2px solid rgb(0, 0, 0); /* Adiciona uma borda branca */
+    border-radius: 5px; /* Arredonda os cantos */
+    background-color: transparent; /* Fundo transparente */
+    transition: all 0.3s ease; /* Adiciona uma transição suave */
+}
+
+a:hover {
+    background-color: rgb(0, 0, 0); /* Fundo branco ao passar o mouse */
+    color: #ff0101; /* Texto vermelho ao passar o mouse */
+}

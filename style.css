@@ -19,6 +19,7 @@ html, body {
 
 /* Estilo do título principal */
 h1 {
+    font-family: 'Metal Mania', cursive; /* Fonte personalizada */
     color: black; /* Cor do texto */
     text-align: center; /* Centraliza o texto */
     margin-top: 20px; /* Espaçamento superior */
@@ -123,3 +124,4 @@ a:hover {
 .produto button:hover {
     background-color: #ff4444; /* Fundo vermelho claro */
 }
+

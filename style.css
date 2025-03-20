@@ -8,8 +8,11 @@
 /* Configurações gerais para o HTML e o body */
 html, body {
     height: 100%; /* Garante que ocupem toda a altura da tela */
-    width: 100%; /* Garante que ocupem toda a largura da tela */
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove paddings padrão */
     background-image: linear-gradient(to bottom, #ff0101, #000000); /* Fundo com gradiente */
+    background-size: cover; /* Garante que o gradiente cubra toda a tela */
+    background-attachment: fixed; /* Faz o gradiente permanecer fixo ao rolar a página */
     font-family: Arial, sans-serif; /* Define a fonte padrão */
     color: white; /* Define a cor padrão do texto */
 }

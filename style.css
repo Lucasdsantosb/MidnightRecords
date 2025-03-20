@@ -1,67 +1,112 @@
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /* Inclui padding e borda no tamanho total */
 }
 
 html, body {
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(to bottom, #ff0101, #000000);
+    background-image: linear-gradient(to bottom, #ff0101, #000000); /* Fundo com gradiente */
+    font-family: Arial, sans-serif; /* Define uma fonte padrão */
+    color: white; /* Define a cor padrão do texto */
 }
 
+/* Estilo do título principal */
 h1 {
     color: black;
     text-align: center;
+    margin-top: 20px;
 }
-h2 {
-    margin-top: 15px;
-}
+
+/* Linha horizontal */
 hr {
     border: none;
     height: 2px;
-    background-color: rgb(0, 0, 0); /* Linha branca */
-    margin: 10px auto; /* Centraliza a linha */
-    width: 100%; /* Ajuste o tamanho da linha */
-}
-a {
-    text-align: center;
-    text-decoration: none; /* Remove o sublinhado */
-    color: rgb(0, 0, 0); /* Define a cor do texto */
-    font-size: 18px; /* Ajusta o tamanho da fonte */
-    font-weight: bold; /* Deixa o texto em negrito */
-    padding: 10px 20px; /* Adiciona espaçamento interno */
-    margin: px; /* Adiciona espaçamento externo entre os links */
-    border: 2px solid rgb(0, 0, 0); /* Adiciona uma borda branca */
-    border-radius: 5px; /* Arredonda os cantos */
-    background-color: transparent; /* Fundo transparente */
-    transition: all 0.3s ease; /* Adiciona uma transição suave */
+    background-color: rgb(0, 0, 0); /* Linha preta */
+    margin: 10px auto;
+    width: 100%;
 }
 
-a:hover {
-    background-color: rgb(0, 0, 0); /* Fundo branco ao passar o mouse */
-    color: #ff0101; /* Texto vermelho ao passar o mouse */
-}
+/* Links do menu */
 .menu {
     display: flex; /* Ativa o Flexbox */
     justify-content: center; /* Centraliza os links horizontalmente */
-    flex-wrap: wrap; /* Permite que os links quebrem para a próxima linha, se necessário */
-    gap: 10px; /* Adiciona espaçamento entre os links */
-    margin-top: 20px; /* Espaçamento acima do menu */
+    flex-wrap: wrap; /* Permite quebra de linha se necessário */
+    gap: 10px; /* Espaçamento entre os links */
+    margin-top: 20px;
 }
 
 a {
     text-decoration: none; /* Remove o sublinhado */
-    color: rgb(0, 0, 0); /* Define a cor do texto */
-    font-size: 18px; /* Ajusta o tamanho da fonte */
-    font-weight: bold; /* Deixa o texto em negrito */
-    padding: 10px 20px; /* Adiciona espaçamento interno */
-    border: 2px solid rgb(0, 0, 0); /* Adiciona uma borda branca */
-    border-radius: 5px; /* Arredonda os cantos */
+    color: rgb(0, 0, 0); /* Cor do texto */
+    font-size: 18px; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito */
+    padding: 10px 20px; /* Espaçamento interno */
+    border: 2px solid rgb(0, 0, 0); /* Borda preta */
+    border-radius: 5px; /* Cantos arredondados */
     background-color: transparent; /* Fundo transparente */
-    transition: all 0.3s ease; /* Adiciona uma transição suave */
+    transition: all 0.3s ease; /* Transição suave */
 }
 
 a:hover {
-    background-color: rgb(0, 0, 0); /* Fundo branco ao passar o mouse */
+    background-color: rgb(0, 0, 0); /* Fundo preto ao passar o mouse */
     color: #ff0101; /* Texto vermelho ao passar o mouse */
+}
+
+/* Estilo dos produtos */
+.produtos {
+    display: flex; /* Deixa os produtos lado a lado */
+    flex-wrap: wrap; /* Quebra linha se faltar espaço */
+    gap: 20px; /* Espaço entre os produtos */
+    justify-content: center; /* Centraliza os produtos na tela */
+    padding: 20px;
+}
+
+.produto {
+    background-color: #111; /* Fundo escuro para o estilo dark */
+    border: 2px solid #b30000; /* Borda vermelha para destacar */
+    padding: 15px;
+    width: 200px; /* Largura fixa para cada card */
+    text-align: center; /* Centraliza o texto */
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.3); /* Efeito de sombra vermelha */
+}
+
+.produto img {
+    width: 100%; /* Imagem ocupa todo o espaço do card */
+    border-radius: 5px; /* Arredonda as bordas da imagem */
+}
+
+.produto h3 {
+    color: white;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.produto p {
+    color: #ccc;
+    font-size: 14px;
+}
+
+.produto span {
+    color: #ff4444;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.produto button {
+    background-color: #b30000;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.produto button:hover {
+    background-color: #ff4444;
 }
